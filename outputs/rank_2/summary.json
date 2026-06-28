@@ -1,0 +1,14 @@
+{
+  "rank": 2,
+  "relative_reconstruction_error": 0.5814694192667705,
+  "cumulative_svd_energy_at_rank": 0.8360852579474367,
+  "dt": 0.06314759102693052,
+  "X1_shape": [
+    400,
+    199
+  ],
+  "X2_shape": [
+    400,
+    199
+  ]
+}
