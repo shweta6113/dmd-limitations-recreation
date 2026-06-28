@@ -32,13 +32,13 @@ $$
 where
 
 $$
-f_1(x,t) = \operatorname{sech}(x + 6 - t)e^{i2.3t}
+f_1(x,t) = \mathrm{sech}(x + 6 - t)e^{i2.3t}
 $$
 
 and
 
 $$
-f_2(x,t) = 2\operatorname{sech}(x)\tanh(x)e^{i2.8t}
+f_2(x,t) = 2\mathrm{sech}(x)\mathrm{tanh}(x)e^{i2.8t}
 $$
 
 The two angular frequencies are:
@@ -51,7 +51,7 @@ $$
 \omega_2 = 2.8
 $$
 
-The first component, ( f_1(x,t) ), represents a translating structure. The second component, ( f_2(x,t) ), represents a stationary oscillatory structure.
+Here, ( f_1(x,t) ) represents a translating structure, while ( f_2(x,t) ) represents a stationary oscillatory structure.
 
 Although the signal is mathematically simple, the translating part is difficult for standard DMD because the same shape appears at different spatial locations over time.
 
@@ -378,14 +378,6 @@ Main observations:
 * Singular Value Decomposition
 * Reduced-order modeling
 * Scientific computing
-
----
-
-## Interview Explanation
-
-I reproduced a DMD limitations study to understand when standard Dynamic Mode Decomposition performs poorly. I tested translating and transient signals and compared reconstructions at different ranks. The main observation was that DMD can require artificially high rank for moving structures and may fail to capture on-off transient behavior. This motivated the use of multi-resolution DMD, which handles time-localized dynamics better.
-
----
 
 ## Summary
 
